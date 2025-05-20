@@ -29,6 +29,15 @@ html{
   border-top-right-radius: 12px;
 }
 
+#minirank{
+	font-size:70%;
+}
+
+
+IMG.banner{
+	 filter: drop-shadow(0 0 1.5px #f44) drop-shadow(0 0 5px rgba(255, 70, 70, 0.5)) drop-shadow(4px 4px 2px rgba(70, 70, 190, 0.3)) ;
+}
+
 
 body{
 	width:690px;
@@ -234,6 +243,7 @@ TD.topentry{
 	width: 320px;
 	height: 260px;
 	position: relative;/*ècíÜâõëµÇ¶Ç…ÇµÇÊÇ§Ç∆ÇµÇΩÇØÇ«Ç§Ç‹Ç≠Ç¢Ç©Ç»Ç©Ç¡ÇΩécä[*/
+	padding-bottom:5px;
 }
 
 .sn_inner{  /*ècíÜâõëµÇ¶Ç…ÇµÇÊÇ§Ç∆ÇµÇΩÇØÇ«Ç§Ç‹Ç≠Ç¢Ç©Ç»Ç©Ç¡ÇΩécä[*/
@@ -241,6 +251,7 @@ TD.topentry{
 	top: 0;
 	bottom: 0;
 	margin: auto;
+	line-height:80%;
 }
 
 .sn IMG{
@@ -327,7 +338,7 @@ DL.whatnew{
 
 DL.result{
 	
-	height:228px;
+	height:238px;
 	padding:8px;
 	overflow: auto;
 	margin-bottom: 10px;
@@ -339,6 +350,7 @@ DL.comment{
 	width:650px;
 	overflow: auto;
 	border:1px #ddddff solid;
+	
 }
 
 
