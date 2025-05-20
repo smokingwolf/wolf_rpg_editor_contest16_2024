@@ -377,7 +377,7 @@ Lightbox.prototype = {
 		// if image is part of set display 'Image x of x' 
 		if(imageArray.length > 1){
 			Element.show('numberDisplay');
-			Element.setInnerHTML( 'numberDisplay', "–‡” " + eval(activeImage + 1) + " / " + imageArray.length);
+			Element.setInnerHTML( 'numberDisplay', " " + eval(activeImage + 1) + " / " + imageArray.length);
 		}
 
 		myLightbox.updateNav();
