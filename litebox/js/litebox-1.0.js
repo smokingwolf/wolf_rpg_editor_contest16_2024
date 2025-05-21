@@ -25,7 +25,7 @@ var fileLoadingImage = "./litebox/images/loading.gif";
 var fileBottomNavCloseImage = "./litebox/images/closelabel.gif";
 var resizeSpeed = 10;	// controls the speed of the image resizing (1=slowest and 10=fastest)
 var borderSize = 4;	//if you adjust the padding in the CSS, you will need to update this variable
-var imgMaxWidth = 690; // add SmokingWOLF
+var imgMaxWidth = 670; // add SmokingWOLF
 
 // -----------------------------------------------------------------------------------
 
