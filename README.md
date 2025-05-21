@@ -5,7 +5,7 @@
 https://smokingwolf.github.io/wolf_rpg_editor_contest16_2024/
 
 ## 収録内容
-- 結果発表ページ（index.html）
+- 結果発表ページ（index.html）とその関連ファイル
 - 作品スクリーンショット
 - 上位作品のゲームファイル（zip）
 
