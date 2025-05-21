@@ -10,6 +10,19 @@
 	text-align: center;
 	line-height: 0;
 	}
+	
+/* ウディコンページ用追加==> */
+#lightbox {
+  max-width: 690px !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#lightboxImage {
+  max-width: 690px !important;
+  height: auto;
+}
+/* <== */
 
 #lightbox a img{ border: none; }
 
@@ -60,7 +73,7 @@
 
 
 #imageDataContainer{
-	font: 10px �l�r �S�V�b�N, Verdana, Helvetica, sans-serif;
+	font: 10px ＭＳ ゴシック, Verdana, Helvetica, sans-serif;
 	background-color: #000;
 	color: #fff;
 	margin: 0 auto;
