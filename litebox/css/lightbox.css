@@ -13,14 +13,13 @@
 	
 /* ウディコンページ用追加==> */
 #lightbox {
-  max-width: 690px !important;
-  width: 100%;
+  max-width: 680px !important;
   box-sizing: border-box;
   margin: 0 auto !important;
 }
 
 #lightboxImage {
-  max-width: 690px !important;
+  max-width: 680px !important;
   height: auto;
 }
 /* <== */
