@@ -15,6 +15,7 @@
 //	Credit also due to those who have helped, inspired, and made their code available to the public.
 //	Including: Scott Upton(uptonic.com), Peter-Paul Koch(quirksmode.org), Thomas Fuchs(mir.aculo.us), and others.
 //
+// このLiteboxは元々 Lokesh Dhakar 氏のLitebox 1.0 をベースに改変しています
 // -----------------------------------------------------------------------------------
 
 //
