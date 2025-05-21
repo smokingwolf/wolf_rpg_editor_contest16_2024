@@ -24,6 +24,7 @@ var fileLoadingImage = "./litebox/images/loading.gif";
 var fileBottomNavCloseImage = "./litebox/images/closelabel.gif";
 var resizeSpeed = 10;	// controls the speed of the image resizing (1=slowest and 10=fastest)
 var borderSize = 4;	//if you adjust the padding in the CSS, you will need to update this variable
+var imgMaxWidth = 690; // add SmokingWOLF
 
 // -----------------------------------------------------------------------------------
 
@@ -150,7 +151,7 @@ Lightbox.prototype = {
 		objBody.appendChild(objLightbox);
 	
 		
-		// �摜�Y�t�e�L�X�g�����摜�̑O�Ɉړ����� 2016/01/02(�y) SmokingWOLF
+		// 画像添付テキスト欄を画像の前に移動した 2016/01/02(土) SmokingWOLF
 		var objImageDataContainer = document.createElement("div");
 		objImageDataContainer.setAttribute('id','imageDataContainer');
 		objImageDataContainer.className = 'clearfix';
@@ -323,7 +324,16 @@ Lightbox.prototype = {
 	//	resizeImageContainer()
 	//
 	resizeImageContainer: function( imgWidth, imgHeight) {
-
+	
+		// スマホなどの画面幅に合わせて最大幅を制限 SmokingWOLF
+		const maxWidth = imgMaxWidth;
+		if (imgWidth > maxWidth) {
+		    const ratio = maxWidth / imgWidth;
+		    imgWidth = maxWidth;
+		    imgHeight = Math.round(imgHeight * ratio);
+		}
+		
+		
 		// get current height and width
 		this.wCur = Element.getWidth('outerImageContainer');
 		this.hCur = Element.getHeight('outerImageContainer');
@@ -348,7 +358,7 @@ Lightbox.prototype = {
 		Element.setHeight('nextLink', imgHeight);
 		Element.setWidth( 'imageDataContainer', imgWidth + (borderSize * 2));
 		Element.setWidth( 'hoverNav', imgWidth + (borderSize * 2));
-		// �ǉ��@2016/09/19(��)
+		// 追加　2016/09/19(月)
 		Element.setWidth( 'lightbox', imgWidth);
 		Element.setHeight( 'lightbox', imgHeight);
 		
